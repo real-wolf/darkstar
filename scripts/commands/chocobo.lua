@@ -12,8 +12,7 @@ cmdprops =
     parameters = "i"
 };
 
-function onTrigger(player)	
-	-- if (player:hasKeyItem(138) ==true) then -- this is the old check, fuck it
+function onTrigger(player)
 	if (player:canUseChocobo() ==0) then
 		player:addStatusEffect(EFFECT_CHOCOBO, 1, 0, 99999); -- (effect, yes, something, time)
 		player:messagePublic(280, player, EFFECT_CHOCOBO, EFFECT_CHOCOBO);
