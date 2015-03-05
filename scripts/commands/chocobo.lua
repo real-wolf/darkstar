@@ -21,6 +21,6 @@ function onTrigger(player)
 	elseif player:hasStatusEffect(EFFECT_CHOCOBO) then
 		player:messageBasic(MSGBASIC_EFFECT_ALREADY_ACTIVE);
 	else
-		player:PrintToPlayer( "You require a chocobo license!" );
+		player:PrintToPlayer( "You require a chocobo license!", 0xE );
 	end
 end;
