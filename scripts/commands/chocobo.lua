@@ -15,7 +15,7 @@ cmdprops =
 function onTrigger(player)
 	if (player:canUseChocobo() ==0) then
 		player:addStatusEffect(EFFECT_CHOCOBO, 1, 0, 99999); -- (effect, yes, something, time)
-		player:messagePublic(EFFECT_ENSTONE_II, player, EFFECT_CHOCOBO, EFFECT_CHOCOBO);
+		player:messagePublic(280, player, EFFECT_CHOCOBO, EFFECT_CHOCOBO);
 	elseif (player:canUseChocobo() ==MSGBASIC_CANT_BE_USED_IN_AREA) then
 		player:messageBasic(MSGBASIC_CANT_BE_USED_IN_AREA);
 	elseif player:hasStatusEffect(EFFECT_CHOCOBO) then
